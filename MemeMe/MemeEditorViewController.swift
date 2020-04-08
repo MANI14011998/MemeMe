@@ -112,8 +112,11 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
 
     }
     @objc func keyboardWillShow(_ notification:Notification) {
+        if(bottumTextField.isEditing){
 
         view.frame.origin.y -= getKeyboardHeight(notification)
+        }
+        
     }
     
     @objc func keyboardWillHide(
