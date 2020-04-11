@@ -67,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-ev-t0T">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-ev-t0T">
                                 <rect key="frame" x="-143" y="80" width="685" height="668"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
@@ -107,7 +107,7 @@
                                     <constraint firstAttribute="height" constant="70" id="wDb-wI-XyM"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Share" image="square.and.arrow.down" catalog="system" id="aKW-NB-cxB">
+                                    <barButtonItem systemItem="action" id="aKW-NB-cxB">
                                         <inset key="largeContentSizeImageInsets" minX="-1" minY="1" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <action selector="shareItemsWithSender:" destination="BYZ-38-t0r" id="Bd3-Ve-SgG"/>
@@ -361,7 +361,6 @@
     <resources>
         <image name="camera" catalog="system" width="64" height="48"/>
         <image name="collection_30x30" width="30" height="30"/>
-        <image name="square.and.arrow.down" catalog="system" width="60" height="64"/>
         <image name="table_30x30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
