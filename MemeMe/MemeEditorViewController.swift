@@ -163,9 +163,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewWillDisappear(_ animated: Bool) {
         unsubscribeFromKeyboardNotifications()
     }
-    func save() {
-        
-    }
+   
     func generateMemedImage() -> UIImage {
         
         toolBarVisible(visible: false)
@@ -187,7 +185,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             let bottom = self.bottumTextField.text!
             let image = self.imagePickerView.image!
             
-            _ = Meme(originalImage: image, bottomText: bottom, topText: top, memeImage: memedImage)
+            let meme = Meme(originalImage: image, bottomText: bottom, topText: top, memeImage: memedImage)
+            
+            MemeStorage.memes.append(meme)
         }
     }
     
